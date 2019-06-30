@@ -1,0 +1,253 @@
+/*公共样式*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*因为文件在css文件夹里所以要先出css文件夹*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?7kkyc2');
+    src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+    url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+    url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*让字体样式和引入的字体图标一样，并设置行高和字体大小，让行高吧文字拉开间距*/
+.fr .icomoon {
+	font-family: 'icomoon';
+	font-size: 16px;
+	line-height: 26px;
+}
+/*版心*/
+.w {
+	width: 1200px;
+	margin: 0 auto;
+
+}
+/*网页中很多这种颜色字体，一起指定*/
+.style-red {
+	color: #c81623;
+}
+.shorcut {
+	height: 31px;
+	line-height: 31px;
+	background-color: #f1f1f1;
+}
+.shorcut li {
+	float: left;
+}
+.spacer {
+	width: 1px;
+	height: 12px;
+	background-color: #666;
+	margin: 9px 14px 0;
+	font-size: 16px;
+}
+.header {
+	position: relative;
+	height: 105px;
+}
+.logo {
+	position: absolute;
+	top: 25px;
+	left: 0;
+	width: 175px;
+	height: 56px;
+}
+.logo a {
+	display: block;
+	position: absolute;
+	width: 175px;
+	height: 56px;
+	background: url(../img/logo.png) no-repeat;
+	text-indent: -9999px;
+	/*font-size: 0;*/
+}
+.search {
+	position: absolute;
+	top: 25px;
+	left: 348px;
+}
+.search input {
+	float: left;
+    width: 445px;
+    height: 32px;
+    border: 2px solid #b1191a;
+    padding-left: 10px;
+    color: #ccc;
+}
+.btn {
+	float: left;
+	width: 82px;
+    height: 36px;
+    background-color: #b1191a;
+    border: 0;
+    font-size: 16px;
+    color: #fff;
+}
+.hotwords {
+	position: absolute;
+	top: 65px;
+	left: 348px;	
+}
+.hotwords li {
+	float: left;
+	margin: 0 10px;
+}
+.shopcar {
+	position: absolute;
+	top: 25px;
+	right: 24px;
+	width: 138px;
+	height: 34px;
+	border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 34px;
+    text-align: center;
+}
+.arrow {
+    font-family: 'icomoon';
+    margin-left: 5px;
+}
+.count {
+	position: absolute;
+    top: -5px;
+    left: 100px;
+    background-color: #e60012;
+    height: 14px;
+    padding: 0 3px;
+    line-height: 14px;
+    color: #fff;
+    border-radius: 7px 7px 7px 0;
+}
+.nav {
+    height: 45px;
+    border-bottom: 2px solid #b1191a;
+}
+.dropdown {
+	width: 209px;
+	height: 45px;
+	background-color: #b1191a;
+}
+.dt	{
+	height: 100%;
+	line-height: 45px;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+}
+.dd {
+	height: 465px;
+	margin-top: 2px;
+  	background-color: #c81623;
+}
+.dd li {
+	height: 31px;
+    line-height: 31px;
+    margin-left: 1px;
+    padding: 0 10px;
+    transition: all .5s linear;
+}
+.dd li:hover {
+	padding-left: 15px;
+}
+/*鼠标经过li的整个模块整个背景变成白色*/
+.dd li:hover {
+	background-color: #fff;
+	box-shadow: 0 2px 15px 5px rgba(0, 0, 0, .2);
+}
+.dd li a {
+	font-size: 14px;
+	color: #fff;
+}
+/*鼠标经过li时超链接变成边框颜色*/
+.dd li:hover a {
+	color: #c81623;
+}
+.dd li i {
+	float: right;
+    font-family: 'icomoon';
+    font-size: 18px;
+    color: #fff;
+}
+.navitems {
+	margin: 0 10px;
+}
+.navitems li {
+	float: left;
+}
+.navitems li a {
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	padding: 0 25px;/*没有宽度可以直接内边距挤开*/
+}
+.footer {
+	height: 386px;
+    padding-top: 30px;
+}
+.mod-service {
+	height: 79px;
+    border-bottom: 1px solid #ccc;
+}
+.mod-service li {
+	float: left;
+    height: 79px;
+	width: 20%;
+}
+.mod-service-icon {
+	float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 35px;
+    background: url(../img/icons.png) no-repeat;
+}
+.mod-service-zheng {
+	background-position: -253px -3px;
+}
+.mod-service-tit {
+	float: left;
+	margin-left: 5px;
+}
+.mod-service-tit h5 {
+	margin-top: 5px;
+}
+.mod-help {
+	height: 187px;
+    border-bottom: 1px solid #ccc;
+}
+.mod-help-item {
+	float: left;
+    width: 150px;
+    padding: 20px 0 0 50px;
+}
+.mod-help-item dt {
+	height: 25px;
+	font-size: 16px;
+}
+.mod-help-item dd {
+	height: 22px;
+}
+.app dt,
+.app p{
+	padding-left: 15px;
+}
+.app dd {
+	height: 107px;
+}
+.app img {
+	margin: 7px 0;
+}
+.mod-copyright {
+	text-align: center;
+}
+.mod-copyright-links {
+	margin: 20px 0 15px 0;
+}
+.mod-copyright-info {
+	line-height: 18px;
+}
